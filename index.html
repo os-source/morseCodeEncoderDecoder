@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse code - encoder, decoder</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--MorseCode script-->
+    <script src="morseCode.js" defer></script>
+
+    <!--Copy to clipboard script-->
+    <script src="copy.js" defer></script>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Morse code - encoder, decoder</h1>
+
+      <div class="container">
+        <div class="halfSizeContainer">
+          <h2>Encoded</h2>
+          <div class="textareaDiv">
+            <textarea name="encoded" id="encoded" placeholder=".... . .-.. .-.. ---   .-- --- .-. .-.. -.."></textarea>
+            <img src="copy.svg" alt="copy" id="copyEncoded" class="copyIcon" title="Copy encoded text" onclick="copy(morseCodeEncoded.value)">
+          </div>
+        </div>
+
+        <div class="halfSizeContainer">
+          <h2>Decoded</h2>
+          <div class="textareaDiv">
+            <textarea name="decoded" id="decoded" placeholder="hello world"></textarea>
+            <img src="copy.svg" alt="copy" id="copyDecoded" class="copyIcon" title="Copy decoded text" onclick="copy(morseCodeDecoded.value)">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
